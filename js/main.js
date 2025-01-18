@@ -167,4 +167,31 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+});
+
+// Menü kategorileri için
+document.addEventListener('DOMContentLoaded', function() {
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const menuCategories = document.querySelectorAll('.menu-category');
+
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Aktif buton sınıfını güncelle
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            // İlgili kategoriyi göster
+            const category = button.getAttribute('data-category');
+            menuCategories.forEach(menuCat => {
+                if (menuCat.id === category) {
+                    menuCat.style.display = 'block';
+                } else {
+                    menuCat.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Sayfa yüklendiğinde ilk kategoriyi göster
+    document.querySelector('.category-btn[data-category="hot"]').click();
 }); 
