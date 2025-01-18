@@ -1,0 +1,42 @@
+Options +FollowSymLinks -Indexes
+RewriteEngine On
+RewriteBase /
+
+# Dosya ve dizin erişim izinleri
+<Files ~ "\.(css|js|jpg|jpeg|png|gif|ico)$">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+# MIME türleri
+AddType text/css .css
+AddType application/javascript .js
+AddType image/jpeg .jpg .jpeg
+AddType image/png .png
+AddType image/gif .gif
+AddType image/x-icon .ico
+
+# Dosya yolları için
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ $1 [L,QSA]
+
+# Önbellek ayarları
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+</IfModule>
+
+# Hata sayfaları
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# CORS ayarları
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule> 

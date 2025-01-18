@@ -1,0 +1,8 @@
+# A Kaydı
+@ IN A [Sunucu_IP_Adresi]
+
+# www için CNAME
+www IN CNAME @
+
+# Mail için MX kayıtları
+@ IN MX 10 mail.cafeblanco.com.tr 

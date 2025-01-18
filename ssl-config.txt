@@ -1,0 +1,5 @@
+# SSL Sertifika Bilgileri
+Domain: cafeblanco.com.tr
+Alt Domain: www.cafeblanco.com.tr
+SSL Type: Let's Encrypt
+Auto Renewal: Yes 

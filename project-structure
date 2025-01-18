@@ -1,0 +1,21 @@
+blanco-coffee/
+│
+├── index.html
+├── menu.html
+├── contact.html
+├── shop.html
+├── gallery.html
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+└── images/
+    ├── logo.png
+    ├── hero-bg.jpg
+    ├── products/
+    │   └── moments/
+    └── platforms/
+        ├── yemeksepeti.png
+        ├── getir.png
+        ├── trendyol.png
+        └── migros.png 

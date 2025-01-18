@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.cafeblanco.com.tr/sitemap.xml 

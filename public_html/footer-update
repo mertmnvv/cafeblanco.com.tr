@@ -1,0 +1,23 @@
+<footer>
+    <div class="footer-content">
+        <div class="footer-info">
+            <p>Erenköy Mah. Telli Kavak Sk. No:6/A</p>
+            <p>Kadıköy/İstanbul</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/blanco.coffeeandmore" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        <div class="footer-credits">
+            <p>© 2025 Tüm Hakları Saklıdır</p>
+            <a href="https://mertmanav.com.tr" target="_blank">By: mertmanav.com.tr</a>
+        </div>
+    </div>
+</footer> 
